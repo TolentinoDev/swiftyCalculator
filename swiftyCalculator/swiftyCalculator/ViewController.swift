@@ -124,9 +124,11 @@ class ViewController: UIViewController {
         else if tag == 26 {
             ifPreformingOperation = true
             print(previousNumber!)
+            /*
             if String(previousNumber) != ""{
                 posNeg.isEnabled = false
             }
+ */
             output.text = String?( String("-") + String(numberonTheScreen))
             isNumberNegative = true
             operation = tag
@@ -136,10 +138,10 @@ class ViewController: UIViewController {
             else if tag == 28 {
                 ifPreformingOperation = true
                 previousNumber = Double(output.text!)!
-                output.text = String?( String(previousNumber) + String("."))
-                isNumberNegative = true
+                output.text = String?( String(format: "%.0f", numberonTheScreen) + String("."))
+            print(output.text!)
                 operation = tag
-                point.isEnabled = false
+                //point.isEnabled = false
 
             }
 
