@@ -47,7 +47,7 @@
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="operationPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fCa-5n-652"/>
+                                                    <action selector="operationPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ihk-jK-6OX"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="26" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w9e-hh-dPZ">
@@ -58,7 +58,7 @@
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="operationPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sZl-nk-uaT"/>
+                                                    <action selector="operationPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9gM-aq-B1m"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="25" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="25H-GM-gR9">
@@ -287,7 +287,14 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="addition" destination="ZGo-Ci-v5O" id="ftG-WH-lPm"/>
+                        <outlet property="divide" destination="LyP-F3-fSp" id="Yqq-3p-89p"/>
+                        <outlet property="minus" destination="gai-w4-6pg" id="pNF-TU-9VM"/>
+                        <outlet property="modular" destination="25H-GM-gR9" id="v4i-I3-e7R"/>
+                        <outlet property="multiply" destination="iA8-lr-yCJ" id="PTB-QL-kI0"/>
                         <outlet property="output" destination="x2E-oF-xvd" id="FFZ-gY-bBI"/>
+                        <outlet property="point" destination="GfP-ja-QW6" id="q8o-Nn-FME"/>
+                        <outlet property="posNeg" destination="w9e-hh-dPZ" id="iuG-ja-OCH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
